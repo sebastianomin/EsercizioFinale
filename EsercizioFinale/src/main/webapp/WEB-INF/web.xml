@@ -6,7 +6,7 @@
 		<display-name>Hello</display-name>
 		<servlet>
 			<servlet-name>Hello</servlet-name>
-			<servlet-class>esercizi.garbatella.servlet.PrimaServlet</servlet-class>
+			<servlet-class>EsercizioFinale.Servlet</servlet-class>
 		</servlet>
 
 		<servlet-mapping>

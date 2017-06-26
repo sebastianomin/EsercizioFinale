@@ -4,15 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Hello</title>
 </head>
 <body>
 <p> Inserisci i tuoi dati nei campi sottostanti:</p>
-<form action="seconda.jsp" method="get">
-<p><label>Nome: <input type="text" name="nome"/></label></p>
-<p><label>Cognome: <input type="text" name="cognome"/></label></p>
-<p><label>Data di nascita (formato gg/mm/aaaa): <input type="text" name="datadinascita"/></label></p>
-<p>Comune di nascita:<input type="text" name="comune"/></p>
+<form action="Hello" >
+<p>Nome: <input type="text" name="nome"/></label></p>
+<p>Cognome: <input type="text" name="cognome"/></p>
+<p>Data di nascita (formato gg/mm/aaaa): <input type="text" name="dataNascita"/></p>
+<p>Comune di nascita:<input type="text" name="comuneNascita"/></p>
 <p>Sesso: M<input type="radio" name="sesso" value="M"/>
           F<input type="radio" name="sesso" value="F"/></p>
 
