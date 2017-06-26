@@ -11,8 +11,8 @@
 <% String nome=request.getParameter("nome") ;
 String cognome=request.getParameter("cognome") ;
 String datadinascita=request.getParameter("datadinascita") ;
+String comune =request.getParameter("comune");
 String sesso=request.getParameter("sesso") ;
-
 if(nome==null||cognome==null||datadinascita==null||sesso==null){
 %>
 <p>ERRORE: torna alla <a href="NewFile.jsp"> pagina di registrazione</a></p>
@@ -22,6 +22,7 @@ else{%>
 <li>Nome:<%=nome %></li>
 <li>Cogome:<%=cognome %></li>
 <li>Data di nascita:<%=datadinascita %></li>
+<li>Comune di nascita:<%=comune %></li>
 <li>Sesso:<%=sesso %></li>
 <% }%>
 	

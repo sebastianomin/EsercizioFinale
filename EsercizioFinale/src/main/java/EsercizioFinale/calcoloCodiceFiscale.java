@@ -12,10 +12,10 @@ import com.mysql.jdbc.Statement;
 public class calcoloCodiceFiscale {
 	public static void main(String[] args) {
 	String codFis = "";
-    String cognomecf = "cognome";
+    String cognomecf = "Mingacci";
     String nomecf = "Sebastiano";
     String dataNascitacf ="22/01/1987";
-    String comuneNascitacf = "Crotone";
+    String comune = "Crotone";
     String sesso="M";
     /*calcolo prime 3 lettere */
     int cont=0;
@@ -113,10 +113,10 @@ public class calcoloCodiceFiscale {
 	try {
 		c = DriverManager.getConnection("jdbc:mysql://localhost/codicicatastali?useSSL=false","root","mysqlAdmin");
 		Statement s = (Statement) c.createStatement ();
-        ResultSet comuni =s.executeQuery("SELECT COMUNE,CODFIS FROM COMUNI WHERE (COMUNE = '" +"Crotone"
+        ResultSet comuni =s.executeQuery("SELECT comune,codFiscoFROM codicicatastali.COMUNI WHERE (comune = '" +"Crotone"
            + "')");
         if (comuni.next()) {
-            String codReg = comuni.getString("CODFIS");
+            String codReg = comuni.getString("codFisco");
             codFis+=codReg;
 	} 
         }catch (SQLException e) {
@@ -238,6 +238,6 @@ public class calcoloCodiceFiscale {
     }
     codFis+=carattereControllo;
    // jTextFieldCodiceFiscale.setText(codFis); 
-
+System.out.println(codFis);
 	}
 }
